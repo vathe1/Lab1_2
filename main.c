@@ -32,15 +32,15 @@ int main(){
         printf("\n |%4d|%10.2f|%20.2f|\n",i,x1,result);
         printf("\n__________________________________________");
         result = 8*pow(((x1/16)-4), 3)-4*x1-12;
-    if (i % 10 == 0)
-        {
+    if (i % 10 == 0) {
             printf("Press any key to continue\n");
             getch();
         }
         x1=x1+delta;
         }
         //v2
-    }else{
+    }
+    else {
         printf("Enter x1:");
         scanf("%lf",&x1);
         printf("Enter x2:");
@@ -54,13 +54,12 @@ int main(){
         printf("\n |%4d|%10.2f|%20.2f|\n",i,x1,result);
         printf("\n__________________________________________");
         result = 8*pow(((x1/16)-4),3)-4*x1-12;
-    if (i % 10 == 0)
-        {
-            printf("Press any key to continue\n");
-            getch();
+    if (i % 10 == 0) {
+        printf("Press any key to continue\n");
+        getch();
         }
-    x1=x1+delta;
-
-}
-}
+        x1=x1+delta;
+            }
+        }
+        return 0;
 }
